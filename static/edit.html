@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 수정페이지 </title>
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script><!--이게 있어야 제이커리 코드를 쓸 수 있음!!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--이게 있어야 에이젝스 코드를 쓸 수 있음!!-->
+
+
+
+
+    <script>
+    let user;
+    getSelf(function (u) {
+    user = u;
+    });
+
+    $(document).ready(function () {
+        get_post();
+    });
+
+    //Post수정
+    function editing() {
+        let address = unescape(location.href)
+        let param = address.split("/")[5];
+
+        let password = $('#password').val();
+        let title = $('#title').val();
+        let content = $('#content').val();
+
+        $.ajax({
+            type: "PUT",
+            url: "/api/posts/"+ param +"/edit",
+            headers: {
+                authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
+            contentType: "application/json",
+            data: JSON.stringify({
+                password: password,
+                title: title,
+                content: content
+            }),
+            success: function (response) {
+                alert(response["msg"])
+                window.location.reload()  
+            },
+            error: function (error) {
+                customAlert(error.responseJSON.errorMessage);
+            },
+        });
+    }
+    
+    //Alart
+    function customAlert(text, confirmCallback) {
+        $("#alertText").text(text);
+        $("#alertModal").modal("show");
+        if (confirmCallback) {
+            $("#alertModal .btn-confirm").click(confirmCallback);
+        }
+        }    
+
+    </script>
+    </head>
+
+    <body>
+        <section class="hero is-primary" onclick="location.href='/'"><!--클릭시 반응에 대한 스크립트는 아래 있음, 여기 누르면 메인페이지로 이동-->
+            <div class="hero-body">
+              <p class="title">
+                Tarel_Base 게시판
+              </p>
+              <p class="subtitle">
+                게시글 수정 페이지
+              </p>
+            </div>
+          </section>
+      
+      
+            <div class="article_section" id="id_as" style="margin: auto;"><!--수정페이지는 제목과 내용만 바꾸자-->
+      
+              <h5 style="margin: 1%;">제목</h5>
+              <input class="input is-primary" type="text" id="title" placeholder="제목을 입력하세요">
+              <h5 style="margin: 1%;">비밀번호</h5>
+              <input class="input is-primary" type="text" id="password" placeholder="게시글 작성때 입력한 비밀번호를 입력하세요">
+              <h5 style="margin: 1%;">내용</h5>
+              <textarea class="textarea is-primary" id="content" placeholder="내용을 입력하세요"></textarea>
+      
+      
+              <div class="btn_area" style="margin:auto; padding: 1%;">                                          <!--버튼-->
+                  <button class="button is-primary" id="confirm" onclick="editing()" style="margin-left: 35%;">작성</button>  <!--이 버튼 누르면 위의 save_posting()작동-->
+                  
+                  <!--취소버튼 스크립트 시작-->
+                  <button class="button" id="cancel" value="page move" onclick="location.href='/'" style=" margin-right: 35%;">취소</button>
+  
+                  <!--취소버튼 스크립트 종료-->
+              </div>
+            </div>
+      
+    <!-- 제이커리나 부트스트렙 등을 쓰려면 이게 필요하다고 함 -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+ </body>
+</html>
+
+

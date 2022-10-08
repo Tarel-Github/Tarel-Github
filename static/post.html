@@ -1,0 +1,118 @@
+
+
+<!--이건 내가 작성한거임-->
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script><!--이게 있어야 제이커리 코드를 쓸 수 있음!!-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--이게 있어야 에이젝스 코드를 쓸 수 있음!!-->
+
+      <title> 글쓰기 페이지 </title>
+      
+    <style>
+        .article_section {
+            width: 80%;
+            padding: 5%;
+        }
+
+        .author {
+            width: 45%;
+            padding: 5%;
+        }
+    </style>
+
+<script>
+
+    let user;//이게 뭔진 모르겠지만 일단은 넣어두기
+          getSelf(function (u) {
+            user = u;
+    });
+
+
+    $(document).ready(function () {//상시실행함수인데 일단은 넣어두기
+    });
+
+    function save_posting() {   //포스트를 작성하면 작동하는 함수
+            let user = $('#user').val();
+            let password = $('#password').val();
+            let title = $('#title').val();
+            let content = $('#content').val();
+
+            $.ajax({
+                type: "POST",
+                url: "/api/posts",//URL은 이렇게 잡혔는데, 파이썬때와는 다르게 어떤 의미가 있지???
+                contentType: "application/json",
+                headers: {
+                authorization: `Bearer ${localStorage.getItem("token")}`},
+                data: JSON.stringify({
+                    user: user,
+                    password: password,
+                    title: title,
+                    content: content
+                }),
+                success: function (response) {
+                    alert(response["Message"]) 
+                    window.location.reload()
+                  },
+                error: function (error) {
+                    customAlert(error.responseJSON.errorMessage);                 //일단 에러메시지는 생략
+                },
+                
+            });
+        }
+        function movepage_tohome() {                                                   //버튼을 누르면 페이지를 이동하는 스크립트
+                      location.href = "/"
+        }
+
+</script>
+
+
+</head><!--user, pwd, title, content 데이터를 받아옴-->
+    <body>
+    
+        <section class="hero is-primary" onclick="movepage_tohome()"><!--클릭시 반응에 대한 스크립트는 아래 있음, 여기 누르면 메인페이지로 이동-->
+          <div class="hero-body">
+            <p class="title">
+              Tarel_Base 게시판
+            </p>
+            <p class="subtitle">
+              게시글 작성 페이지
+            </p>
+          </div>
+        </section>
+    
+    
+          <div class="article_section" id="id_as" style="margin: auto;">
+            <div class="article_id" style="width: 47.5%; margin: 1%;float: left;">
+                <h5>작성자</h5>
+                <input class="input is-primary" style="width: 95%; margin: 1%;" type="text" id="user" placeholder="작성자">
+            </div>
+            <div class="article_pw" style="width: 47.5%; margin: 1%;float: left;">
+                <h5>비밀번호</h5>
+                <input class="input is-primary" style="width: 95%; margin: 1%; float: left " id="password" type="text" placeholder="비밀번호">
+            </div>
+    
+            <h5 style="margin: 1%;">제목</h5>
+            <input class="input is-primary" type="text" id="title" placeholder="제목을 입력하세요">
+            <h5 style="margin: 1%;">내용</h5>
+            <textarea class="textarea is-primary" id="content" placeholder="내용을 입력하세요"></textarea>
+    
+    
+            <div class="btn_area" style="margin:auto; padding: 1%;">                                          <!--버튼-->
+                <button class="button is-primary" id="confirm" onclick="save_posting()" style="margin-left: 35%;">작성</button>  <!--이 버튼 누르면 위의 save_posting()작동-->
+                
+                <!--취소버튼 스크립트 시작-->
+                <button class="button" id="cancel" value="page move" onclick="movepage_tohome()" style=" margin-right: 35%;">취소</button>
+
+                <!--취소버튼 스크립트 종료-->
+            </div>
+          </div>
+    
+    </body>
+    </html>
+

@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 게시글 상세보기 페이지 </title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet"  type="text/css" href="/css/style.css">
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script><!--이게 있어야 제이커리 코드를 쓸 수 있음!!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--이게 있어야 에이젝스 코드를 쓸 수 있음!!-->
+    
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+    <script>
+        $(document).ready(function () {
+            post_detail();
+
+        })//겟포스트 함수를 상시 실행
+
+
+    
+    // Post 조회
+    function post_detail() {                                   //게시글 데이터를 가져오는 명령
+      let address = unescape(location.href)
+      let param = address.split("/")[5];
+                                                            //에이젝스 코드를 통해서 가져온다.
+      $.ajax({                                                //게시글을 가져온다.
+          type: "GET",
+          url: '/api/posts/'+param +'/detail',
+          contentType: "json",
+          data: {},
+          async: false,
+          success: function (response) {
+              let rows = response
+              for (let i = 0; i < rows.length; i++){
+                let postsId = rows[i]['postsId']
+                let user = rows[i]['user']
+                let title = rows[i]['title']
+                let content = rows[i]['content']
+
+                let temp_html =`<div class ="posting">
+                                    <table id="post-box">
+                                        <tr>
+                                            <th style="width: 750px;">제목: ${title}</th>
+                                            <th style="width: 150px;">작성자: ${user}</th>
+                                            <th style="width: 150px;"></th>    
+                                        </tr>
+                                    </table>   
+                                    <h1>내용: ${content}</h1>       
+                                 </div>
+                            `
+                $('#detail-box').append(temp_html)}
+            }       
+      });
+    }; 
+
+
+
+
+
+    //포스팅 삭제 명령
+    function deleting() {
+        let address = unescape(location.href)
+        let param = address.split("/")[5];
+
+        let password = $('#password').val();
+
+        $.ajax({
+            type: "DELETE",
+            url: "/api/posts/"+ param,
+            contentType: "application/json",
+            headers: {
+            authorization: `Bearer ${localStorage.getItem("token")}`},
+            data: JSON.stringify({
+                password: password
+            }),
+            success: function (response) {
+                alert(response["msg"])
+                location.href = "/"                     //지웠으면 메인페이지로 가자
+            },
+            error: function (error) {
+                customAlert(error.responseJSON.errorMessage);
+            },
+        });
+    }
+             
+
+    //Comment를 만들어서 등록
+    function save_comment() {
+        let address = unescape(location.href)
+        let param = address.split("/")[5];  //게시글의 아이디를 가져오는 명령어.
+    
+
+        let content = $('#inputContent').val();     //내용 가져오기
+        let nickname = $('#nickname').val();        //닉네임 가져오기
+        let password = $('#compwd').val();
+
+
+        $.ajax({
+            type: "POST",
+            url: "/api/comments/"+ param,
+            contentType: "application/json",
+            headers: {
+            authorization: `Bearer ${localStorage.getItem("token")}`},
+            data: JSON.stringify({
+                nickname: nickname,
+                content: content,
+                password: password
+            }),
+            success: function (response) {
+                alert('작성성공!')
+                // alert(response["Message"])
+                // customAlert(Message)
+                window.location.reload()
+                },
+            error: function (error) {
+                customAlert(error.responseJSON.errorMessage);
+            },
+        });
+    }
+
+
+    $(document).ready(function () {  
+        comment_list()
+
+        })
+    
+    //Comment 조회          코멘트를 가져오라는 명령
+    function comment_list() {
+        let address = unescape(location.href)
+        let param = address.split("/")[5];
+
+        $.ajax({
+            type: "GET",
+            url: '/api/comments/'+param,
+            headers: {
+              authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
+            contentType: "json",
+            data: {},
+            async: false,
+            success: function(response) {
+                let rows = response 
+                for (let i=0; i< rows.length; i++){
+                    let comments = response[i]['comments'];        //코멘트 데이터는 포스트와 조금 다르게 가져옴
+
+                    if (comments.length > 0){                       //코멘트가 존재한다면!!
+                        for (let j=comments.length-1; j >= 0; j--){
+                            let nickname = comments[j]['nickname']
+                            let comment = comments[j]['content']
+                            let commentId = comments[j]['commentid']
+                            //makeComment(nickname,comment,commentId)
+                            let temp_html = `
+                            <div>
+                                <h1>---------------------------------------------------------------------------------------------------------------</h1>
+                                <h1>작성자: ${nickname}</h1>
+                                <h1>내용:${comment}</h1>
+                                <input class="input is-primary" type="text" id="comment_password" style="width: 400px;" placeholder="삭제&수정시 이곳에 비번입력">
+                                <button class="button" onclick= "editComment(${commentId})" >수정</button>
+                                <button class="button" onclick= "deleteComment(${commentId})" >삭제</button>
+                                <input class="input is-primary" type="text" id="commentInput${commentId}" style="width: 800px;" placeholder="수정시 이곳에 내용입력">
+
+                            </div>                           
+                            `
+                            $('#comment-box').append(temp_html)
+                        }}
+                }
+                
+              },
+            error: function(error) {
+                console.error(error.responseJSON.errorMessage); 
+            },
+        });
+    }        
+    
+    //Comment 수정
+    function editComment(commentId) {
+        let address = unescape(location.href)
+        let param = address.split("/")[5];
+    
+        const comment = $(`#commentInput${commentId}`).val();    //기존에 적혀있던 건가??
+        if (!comment) {
+            alert("새로운 덧글을 적어주세요.")
+            return;
+        }
+
+        $.ajax({
+            type: "PATCH",
+            url: `/api/comments/`+ param +`/${commentId}`,
+            contentType: "application/json",
+            headers: {
+                authorization: `Bearer ${localStorage.getItem('token')}`,
+            },
+            data: JSON.stringify({
+                content: comment
+            }),
+            success: function (response) {
+                alert('댓글 변경 완료')
+                window.location.reload()
+            },
+            error: function (error) {
+                console.error(error.responseJSON.errorMessage);
+            },
+        });
+        $(`#comment${commentId}`).text(comment)
+        editCommentHide(commentId)
+    }
+
+
+    //Comment 삭제
+    function deleteComment(commentId) {
+        let address = unescape(location.href)
+        let param = address.split("/")[5];
+        let password = $('#comment_password').val();   //사용자가 덧글을 지우기 위해 입력한 비번
+
+        if (confirm("댓글을 삭제하시겠습니까?")) {
+            $.ajax({
+                type: "DELETE",
+                url: `/api/comments/`+ param +`/${commentId}`,
+                contentType: "application/json",
+                headers: {
+                authorization: `Bearer ${localStorage.getItem("token")}`},
+                data: JSON.stringify({
+                    password: password
+                }),
+                success: function (response) {
+                    alert('삭제함')
+                    //$(`#commentBody${commentId}`).hide()
+                },
+                error: function (error) {
+                    alert(error.responseJSON.errorMessage)
+                },
+            });
+        } 
+        window.location.reload()
+    }
+
+
+    function editing() {
+      let address = unescape(location.href)
+      let postsId = address.split("/")[5];
+      location.href=`/api/posts/${postsId}/edit`
+    }
+
+
+    
+    </script>
+      
+</head>
+
+<body>
+    <section class="hero is-primary" onclick="location.href='/'">
+        <div class="hero-body">
+          <p class="title">
+            게시글 조회 홈페이지
+          </p>
+          <p class="subtitle">
+            항해99 9기 F반 10조 손민성
+          </p>
+        </div>
+    </section>
+    <!--게시글이 표시되는 상자!!-->
+
+    <div style="width: 1000px; margin: auto; margin-top: 1%;">
+
+        <div class="box" style="min-height: 400px;">
+            <div id= "detail-box" style="min-height: 300px;"><!--게시글이 불러와지는 곳은 여기!!-->
+            </div>
+            <input class="input is-primary" type="text" id="password" style="float: left; width: 500px;" placeholder="삭제시 이 게시물의 비번을 입력하세요">
+            <button class="button" onclick= "deleting()" style="float: right;">삭제</button>
+            <button class="button" onclick="editing()" value="page move" style="float: right;">수정</button>
+        </div>
+    </div>
+
+    <!--덧글이 표시되는 상자!!-->
+    <div style="width: 1000px; margin: auto; margin-top: 1%;">
+
+        <div class="box">
+            <div id= "comment-box">
+                덧글목록
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--덧글을 작성하는 상자!!-->
+
+    <div style="width: 1000px; margin: auto; margin-top: 1%;">
+
+        <div class="box">
+            <div id= "comment-posting-box">
+
+
+                <h1>새로운 덧글 작성</h1>
+                <input class="input is-primary" type="text" id="nickname" style="width: 400px; margin: 0.5%;" placeholder="작성자 이름을 적어주세요">
+                <input class="input is-primary" type="text" id="compwd" style="width: 400px; margin: 0.5%;" placeholder="비밀번호를 적어주세요">
+                <input class="input is-primary" type="text" id="inputContent" style="width: 900px; margin: 0.5%;" placeholder="덧글을 적어주세요">
+
+                <div class="posting_btns">
+                    <button type="submit" class="button" onclick="save_comment()">작성완료</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 제이커리나 부트스트렙 등을 쓰려면 이게 필요하다고 함 -->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>
+
+
