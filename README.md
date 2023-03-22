@@ -1,4 +1,4 @@
-
+## 프로필
 
 
 
@@ -11,6 +11,7 @@ FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습�
 사용언어: 자바스크립트  
 기술: 
 
+## Study
 
 
 
@@ -49,11 +50,6 @@ FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습�
 <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=white">
 <img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=for-the-badge&logo=Visual Studio&logoColor=white">
 <br />
-
-
-
-
-
 
 <!--
 주석공간
