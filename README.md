@@ -12,7 +12,17 @@ FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습�
 기술: 
 
 ## Study
+### 알고리즘
+https://github.com/Tarel-Github/Algorithm_practice
 
+### python
+
+### C, C++
+
+### javaScript
+
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white">
+https://github.com/Tarel-Github/TypeScript_prac
 
 
 
