@@ -2,7 +2,9 @@
 
 ## 프로필
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Tarel-Github&show_icons=true&theme=merko)
 
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Tarel-Github&layout=compact&theme=merko)
 
 ## 프로젝트
 ### 고민접기
