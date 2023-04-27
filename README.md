@@ -34,7 +34,7 @@ https://github.com/Tarel-Github/studyPython2023
 ### C, C++
 https://github.com/Tarel-Github/studyCpp2023
 
-### C#
+### C#, Winforms
 https://github.com/Tarel-Github/basic-CSharp-2023
 
 ### javaScript, TypeScript
