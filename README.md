@@ -14,23 +14,30 @@ https://github.com/gomin-solution/Backend.git
 FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습니다.
 
 사용언어: 자바스크립트  
-기술: 
 
 
 <div align="center">
   <h1>Study</h1>
 </div>
 
+
 ### 알고리즘
+https://github.com/Tarel-Github/python-codingtest-2023
 https://github.com/Tarel-Github/Algorithm_practice
 
+### Windows Presentation Foundation (WPF)
+https://github.com/Tarel-Github/pknu-wpf-2023
+
 ### python
+https://github.com/Tarel-Github/studyPython2023
 
 ### C, C++
+https://github.com/Tarel-Github/studyCpp2023
 
-### javaScript
+### C#
+https://github.com/Tarel-Github/basic-CSharp-2023
 
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white">
+### javaScript, TypeScript
 https://github.com/Tarel-Github/TypeScript_prac
 
 <br /><br /><br />
