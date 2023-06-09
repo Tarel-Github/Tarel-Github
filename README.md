@@ -45,11 +45,17 @@ https://github.com/Tarel-Github/pknu-wpf-2023
 https://github.com/Tarel-Github/TypeScript_prac
 
 ### Node.js
+
+<details>
+<summary>더보기</summary>
 https://github.com/Tarel-Github/Week4</br>
 https://github.com/Tarel-Github/Week5-LAP</br>
 https://github.com/Tarel-Github/Week5-jest</br>
 https://github.com/Tarel-Github/Week6-miniproject</br>
-https://github.com/Tarel-Github/week7-cloneproject
+https://github.com/Tarel-Github/week7-cloneproject)
+</details>
+
+
 
 <br /><br /><br />
 
