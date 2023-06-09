@@ -11,6 +11,7 @@
 ### 고민접기
 
 https://github.com/gomin-solution/Backend.git
+<br />
 FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습니다.
 
 사용언어: 자바스크립트  
