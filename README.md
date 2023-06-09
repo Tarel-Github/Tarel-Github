@@ -25,17 +25,15 @@ FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습�
 https://github.com/Tarel-Github/python-codingtest-2023 </br>
 https://github.com/Tarel-Github/Algorithm_practice
 
-### Windows Presentation Foundation (WPF)
-https://github.com/Tarel-Github/pknu-wpf-2023
-
 ### python
 https://github.com/Tarel-Github/studyPython2023
 
 ### C, C++
 https://github.com/Tarel-Github/studyCpp2023
 
-### C#, Winforms
+### C#, Winforms, WPF (Windows Presentation Foundation)
 https://github.com/Tarel-Github/basic-CSharp-2023
+https://github.com/Tarel-Github/pknu-wpf-2023
 
 ### javaScript, TypeScript
 https://github.com/Tarel-Github/TypeScript_prac
