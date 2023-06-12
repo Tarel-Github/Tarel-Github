@@ -2,9 +2,10 @@
 
 ## 프로필
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Tarel-Github&show_icons=true&theme=merko)
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Tarel-Github&show_icons=true&theme=merko)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Tarel-Github&layout=compact&theme=merko)
+
 <div align="center">
   <h1>Project</h1>
 </div>
