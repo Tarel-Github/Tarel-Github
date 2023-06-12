@@ -55,6 +55,8 @@ https://github.com/Tarel-Github/Week6-miniproject</br>
 https://github.com/Tarel-Github/week7-cloneproject)
 </details>
 
+### Raspberry Pi
+https://github.com/Tarel-Github/pknu_raspberrypi_2023
 
 
 <br /><br /><br />
