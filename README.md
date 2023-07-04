@@ -30,12 +30,10 @@ FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습�
 
 ### 알고리즘
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=python-codingtest-2023)](https://github.com/Tarel-Github/python-codingtest-2023)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=python-codingtest-2023)](https://github.com/Tarel-Github/python-codingtest-2023)
-
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=Algorithm_practice)](https://github.com/Tarel-Github/Algorithm_practice)
 
-https://github.com/Tarel-Github/python-codingtest-2023 </br>
-https://github.com/Tarel-Github/Algorithm_practice
+
+
 
 ### 머신러닝 & 딥러닝 (Colaboratory)
 
