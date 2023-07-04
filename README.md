@@ -30,50 +30,55 @@ FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습�
 
 ### 알고리즘
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=python-codingtest-2023)](https://github.com/Tarel-Github/python-codingtest-2023)
-<!--
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=Algorithm_practice)](https://github.com/Tarel-Github/Algorithm_practice)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=python-codingtest-2023)](https://github.com/Tarel-Github/python-codingtest-2023)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=Algorithm_practice)](https://github.com/Tarel-Github/Algorithm_practice)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CodingNewbie0&repo=miniprojects)](https://github.com/CodingNewbie0/miniprojects)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=CodingNewbie0&repo=miniprojects)](https://github.com/CodingNewbie0/miniprojects)
--->
-
 
 https://github.com/Tarel-Github/python-codingtest-2023 </br>
 https://github.com/Tarel-Github/Algorithm_practice
 
 ### 머신러닝 & 딥러닝 (Colaboratory)
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=Artificial_Intelligence_practice)](https://github.com/Tarel-Github/Artificial_Intelligence_practice)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=ChatController)](https://github.com/Tarel-Github/ChatController)
+
 https://github.com/Tarel-Github/Artificial_Intelligence_practice
 
 https://github.com/Tarel-Github/ChatController/tree/main
 
 ### python
-https://github.com/Tarel-Github/studyPython2023
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=studyPython2023)](https://github.com/Tarel-Github/studyPython2023)
 
 ### C, C++
-https://github.com/Tarel-Github/studyCpp2023
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=studyCpp2023)](https://github.com/Tarel-Github/studyCpp2023)
 
 ### C#, Winforms, WPF (Windows Presentation Foundation)
-https://github.com/Tarel-Github/basic-CSharp-2023
-<br />
-https://github.com/Tarel-Github/pknu-wpf-2023
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=basic-CSharp-2023)](https://github.com/Tarel-Github/basic-CSharp-2023)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=pknu-wpf-2023)](https://github.com/Tarel-Github/pknu-wpf-2023)
+
 
 ### javaScript, TypeScript
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=TypeScript_prac)](https://github.com/Tarel-Github/TypeScript_prac)
+
 https://github.com/Tarel-Github/TypeScript_prac
 
 ### Node.js
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=week7-cloneproject)](https://github.com/Tarel-Github/week7-cloneproject)
 
 <details>
 <summary>더보기</summary>
-https://github.com/Tarel-Github/Week4</br>
-https://github.com/Tarel-Github/Week5-LAP</br>
-https://github.com/Tarel-Github/Week5-jest</br>
-https://github.com/Tarel-Github/Week6-miniproject</br>
-https://github.com/Tarel-Github/week7-cloneproject)
+  
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=Week4)](https://github.com/Tarel-Github/Week4)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=Week5-LAP)](https://github.com/Tarel-Github/Week5-LAP)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=Week5-jest)](https://github.com/Tarel-Github/Week5-jest)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=Week6-miniproject)](https://github.com/Tarel-Github/Week6-miniproject)
+  
 </details>
 
 ### Raspberry Pi
-https://github.com/Tarel-Github/pknu_raspberrypi_2023
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=pknu_raspberrypi_2023)](https://github.com/Tarel-Github/pknu_raspberrypi_2023)
+
 
 
 <br /><br /><br />
