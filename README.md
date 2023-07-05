@@ -42,8 +42,6 @@ https://github.com/Tarel-Github/Algorithm_practice
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=Artificial_Intelligence_practice)](https://github.com/Tarel-Github/Artificial_Intelligence_practice)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=ChatController)](https://github.com/Tarel-Github/ChatController)
 
-
-https://github.com/Tarel-Github/ChatController/tree/main
 <br />
 
 ### python
