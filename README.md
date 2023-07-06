@@ -33,7 +33,6 @@ FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습�
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=Algorithm_practice)](https://github.com/Tarel-Github/Algorithm_practice)
 
 
-https://github.com/Tarel-Github/Algorithm_practice
 <br />
 <br />
 
