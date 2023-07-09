@@ -62,6 +62,11 @@ FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습�
 
 <br />
 
+### ASP.NET
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=pknu_aspnet_2023)](https://github.com/Tarel-Github/pknu_aspnet_2023)
+
+<br />
+
 ### javaScript, TypeScript
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=TypeScript_prac)](https://github.com/Tarel-Github/TypeScript_prac)
