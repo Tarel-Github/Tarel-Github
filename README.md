@@ -11,10 +11,10 @@
 
 <div align="center">
   <a href="s">
-    <img src="https://github-readme-stats.vercel.app/api?username=Tarel-Github&show_icons=true&theme=tokyonight" width="49%" height="180px" />
+    <img src="https://github-readme-stats.vercel.app/api?username=Tarel-Github&show_icons=true&theme=tokyonight" width="49%" height="175px" />
   </a>
   <a href="s">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tarel-Github&layout=compact&theme=tokyonight" height="180px" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tarel-Github&layout=compact&theme=tokyonight" height="175px" />
   </a>
 </div>
 
