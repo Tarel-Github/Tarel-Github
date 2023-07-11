@@ -28,7 +28,7 @@
 <br />
 
 
-<!--여기서부터 프로젝트-->
+<!--====================================여기서부터 프로젝트====================================-->
 <div align="left">
   <h1>🏆Project</h1>
 </div>
@@ -47,23 +47,23 @@
 
 <br /><br />
 
-
+<!--====================================여기서부터 기술 스텍====================================-->
 <div align="left">
   <h1>🪄Teck Stacks</h1>
 </div>
 
 <div align="left">
-<h3>Summary</h3>
-<img src="https://img.shields.io/badge/.Net-512BD4?style=for-the-badge&logo=.NET&logoColor=white">
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">
-<img src="https://img.shields.io/badge/Unity-FFFFFF?style=for-the-badge&logo=Unity&logoColor=black">
 
-<br />
+  ><h3>요약</h3>
+  ><img src="https://img.shields.io/badge/.Net-512BD4?style=for-the-badge&logo=.NET&logoColor=white">
+  ><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">
+  ><img src="https://img.shields.io/badge/Unity-FFFFFF?style=for-the-badge&logo=Unity&logoColor=black">
+
 <br />
 <br />
 
 <details>
-<summary>Detail</summary>
+<summary>전체보기</summary>
 
 <h3>Language</h3>
 
@@ -124,16 +124,16 @@
 <img src="https://img.shields.io/badge/Transformer-000000?style=for-the-badge&logo=transformer&logoColor=black">
 
 </details>
-
 <br />
 <br />
-
 </div>
 
-<br /><br /><br /><br />
+<br /><br />
+
+<!--====================================여기서부터 스터디 리포지토리====================================-->
 
 <div align="left">
-  <h1>Study Repository</h1>
+  <h1>🖋️Study Repository</h1>
 </div>
 
 <details>
@@ -222,7 +222,7 @@
 **Tarel-Github/Tarel-Github** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
-
+✒️🖊️🖋️
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
