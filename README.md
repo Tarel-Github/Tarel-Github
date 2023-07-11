@@ -18,9 +18,10 @@
 <br />
 
 
-<div style="background-color: blue; padding: 10px;">
-  이 영역의 배경색이 파란색으로 표시됩니다.
+<div style="background-color: blue; color: white; padding: 10px;">
+  이 영역의 배경색이 파란색이고 텍스트 색상이 흰색으로 표시됩니다.
 </div>
+
 
 <div align="left">
   <h1>Project</h1>
