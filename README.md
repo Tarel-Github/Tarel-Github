@@ -18,26 +18,38 @@
 <br />
 
 <div align="left">
-  <h1>Project</h1>
+  <h1>🎓Education</h1>
+  
+> 🏢 (2023.02 ~ 2023.09)  부경대학교 IoT 시스템 개발자  </br>
+> ⚓ (2022.08 ~ 2022.12)  스파르타 코딩클럽 항해 99 - 9기  </br>
+> ⚙️ (2013.03 ~ 2019.02)  동명대학교 기계공학과  </br>
 </div>
+<br />
+<br />
 
+
+<!--여기서부터 프로젝트-->
+<div align="left">
+  <h1>🏆Project</h1>
+</div>
 <br />
 
 <div color="gray">
-  <h3> 커뮤니티 웹 서비스 - 고민접기</h3>
-  https://github.com/gomin-solution/Backend.git
-  <br />
-  FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습니다.
-  역할: Backend 개발
-  프레임워크: Node.js
-  사용언어: 자바스크립트  
+  
+  ><h3> 커뮤니티 웹 서비스 - 고민접기</h3>
+  >https://github.com/gomin-solution/Backend.git
+  ><br />
+  >FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BackEnd 개발로 참여했습니다.
+  >프레임워크: Node.js
+  >사용언어: 자바스크립트 
+  
 </div>
 
 <br /><br />
 
 
 <div align="left">
-  <h1>Stack</h1>
+  <h1>🪄Teck Stacks</h1>
 </div>
 
 <div align="left">
@@ -47,6 +59,9 @@
 <img src="https://img.shields.io/badge/Unity-FFFFFF?style=for-the-badge&logo=Unity&logoColor=black">
 
 <br />
+<br />
+<br />
+
 <details>
 <summary>Detail</summary>
 
