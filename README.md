@@ -2,14 +2,11 @@
 
 ![header](https://capsule-render.vercel.app/api?type=waving&height=200&text=Tarel-Github&fontAlign=70&fontAlignY=40&color=gradient)
 
-
-
-
-<div align="center">
+<div align="left">
   <h1>Profile</h1>
 </div>
 
-<div align="center">
+<div align="left">
   <a href="s">
     <img src="https://github-readme-stats.vercel.app/api?username=Tarel-Github&show_icons=true&theme=tokyonight" height="175px" />
   </a>
@@ -18,30 +15,46 @@
   </a>
 </div>
 
-<div align="center">
+<br />
+
+
+<div style="background-color: blue; padding: 10px;">
+  이 영역의 배경색이 파란색으로 표시됩니다.
+</div>
+
+<div align="left">
   <h1>Project</h1>
 </div>
 
 <br />
 
-### 커뮤니티 웹 서비스 - 고민접기
-
-https://github.com/gomin-solution/Backend.git
-<br />
-FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습니다.
-
-역할: Backend 개발
-프레임워크: Node.js
-사용언어: 자바스크립트  
+<div color="gray">
+  <h3> 커뮤니티 웹 서비스 - 고민접기</h3>
+  https://github.com/gomin-solution/Backend.git
+  <br />
+  FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습니다.
+  역할: Backend 개발
+  프레임워크: Node.js
+  사용언어: 자바스크립트  
+</div>
 
 <br /><br />
 
 
-<div align="center">
+<div align="left">
   <h1>Stack</h1>
 </div>
 
-<div align="center">
+<div align="left">
+<h3>Summary</h3>
+<img src="https://img.shields.io/badge/.Net-512BD4?style=for-the-badge&logo=.NET&logoColor=white">
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">
+<img src="https://img.shields.io/badge/Unity-FFFFFF?style=for-the-badge&logo=Unity&logoColor=black">
+
+<br />
+<details>
+<summary>Detail</summary>
+
 <h3>Language</h3>
 
 <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=C&logoColor=white">
@@ -80,7 +93,6 @@ FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습�
 <br />
 <br />
 
-
 <h3>Tool</h3>
 <img src="https://img.shields.io/badge/Unity-FFFFFF?style=for-the-badge&logo=Unity&logoColor=black">
 <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=white">
@@ -94,7 +106,6 @@ FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습�
 <br />
 <br />
 
-
 <h3>A.I</h3>
 <img src="https://img.shields.io/badge/googlecolab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black">
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=black">
@@ -102,7 +113,7 @@ FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습�
 <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=black">
 <img src="https://img.shields.io/badge/Transformer-000000?style=for-the-badge&logo=transformer&logoColor=black">
 
-
+</details>
 
 <br />
 <br />
@@ -111,15 +122,13 @@ FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BE로 참여했습�
 
 <br /><br /><br /><br />
 
-<div align="center">
+<div align="left">
   <h1>Study Repository</h1>
 </div>
 
 <details>
 <summary>더보기</summary>
 
-
-  
 ### 알고리즘
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=python-codingtest-2023)](https://github.com/Tarel-Github/python-codingtest-2023)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Tarel-Github&repo=Algorithm_practice)](https://github.com/Tarel-Github/Algorithm_practice)
