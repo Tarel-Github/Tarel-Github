@@ -3,7 +3,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&height=200&text=Tarel-Github&fontAlign=70&fontAlignY=40&color=gradient)
 
 <div align="left">
-  <h1>Profile</h1>
+  <h1>💎Profile</h1>
 </div>
 
 <div align="left">
@@ -37,11 +37,22 @@
 <div color="gray">
   
   ><h3> 커뮤니티 웹 서비스 - 고민접기</h3>
-  >https://github.com/gomin-solution/Backend.git
-  ><br />
-  >FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BackEnd 개발로 참여했습니다.
-  >프레임워크: Node.js
+  >https://github.com/gomin-solution/Backend.git <br />
+  >FE 2명, BE 3명, DE 1명으로 구성된 팀프로젝트로 BackEnd 개발로 참여했습니다.<br />
+  >프레임워크: Node.js <br />
   >사용언어: 자바스크립트 
+  
+</div>
+
+<br />
+
+<div color="gray">
+  
+  ><h3> IoT 시스템 개발 - SmartCampus</h3>
+  >https://github.com/Tarel-IoT-PK/SmartHome_func<br />
+  >5명으로 구성된 팀프로젝트로 라인트레이서와 아두이노 센서를 활용한 SmartCampus 구현에 참여했습니다.<br />
+  >프레임워크: .Net FrameWork, Linux, RaspberryPi, Arduino  <br />
+  >사용언어: C, C#, Python<br />
   
 </div>
 
@@ -128,8 +139,7 @@
 <br />
 </div>
 
-<br /><br />
-
+<br />
 <!--====================================여기서부터 스터디 리포지토리====================================-->
 
 <div align="left">
